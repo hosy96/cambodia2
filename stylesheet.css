@@ -423,8 +423,65 @@ footer {
 }
 
 
+/* 共通 Common */
+.common_title{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+/* 加害者との対面 */
+
+.main {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 75%;
+  background-image: url(./202105_newIMAGE/main_back2.jpg);
+  box-shadow: 8px 8px 4px gray;
+}
+
+.kagaisha_body{
+  background-image:url(./img/b087.gif);
+}
+
+.kagaisha_title {
+  text-align: center;
+}
+
+.kagaisha_mov_title {
+  text-align: center;
+}
+
+.kagaisha_mov {
+  text-align: center;
+
+}
+
+.kagaisha_img1 {
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.kagaisha_table {
+  background-image: url(./img/haikei_orange.jpg);
+  margin: 0 auto;
+
+}
+
+
+
+
+
+
+
 /* 幼き日のCSS */
 
+/* テーブル内の背景をレインボーにする */
 .osanakihi_table{
   background: -moz-linear-gradient(left,
     rgba(255,0,0,0.2),
@@ -446,11 +503,6 @@ footer {
   );
 }
 
-.osanaki_title{
-  margin-top: 10px;
-  text-align: center;
-  font-size: 25px;
-}
 
 /* 女性文化賞 */
 
