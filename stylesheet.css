@@ -169,7 +169,8 @@ header {
   display: flex;
   justify-content: space-around;
   height: auto;
-  background-color: #feffdf;
+  /* background-color: #feffdf; */
+  background-image: url(./img/top_back.jpg);
   margin-top: 60px;
 }
 
@@ -218,8 +219,9 @@ header {
   margin-bottom: 60px;
   width: 60%;
   background: linear-gradient(to right, #f7adf7, #ffffff);
+  /* background-image: url(./img/top_jikoshoukai_back.jpg); */
   padding: 20px 40px;
-  border-radius: 5%;
+  border-radius: 1%;
   box-shadow: 8px 8px 4px gray;
 
   animation-name: fade-in1;
@@ -270,7 +272,6 @@ header {
 
 }
 
-
 .top-book {
   display: block;
 }
@@ -299,11 +300,11 @@ header {
 
 .top-book p {
   position: absolute;
-  top: 25%;
+  top: 26%;
   left: 10%;
   right: 10%;
   text-align: center;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: bold;
   user-select: none;
 }
@@ -430,9 +431,40 @@ footer {
   font-size: 25px;
 }
 
-
-
 /* 加害者との対面 */
+
+.kagaisha_title {
+  margin: 30px auto;
+  margin-bottom: 50px;
+  width: 60%;
+  position: relative;
+  padding: 0.5em;
+  background: #a6d3c8;
+  color: rgb(39, 69, 238);
+  box-shadow: 8px 3px 4px gray;
+}
+
+.kagaisha_title::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
+}
+
+.mov_area {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 2%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-image: url(./202105_newIMAGE/mov_back.jpg);
+  box-shadow: 8px 8px 4px gray;
+}
 
 .main {
   padding-top: 20px;
@@ -467,23 +499,132 @@ footer {
 
 }
 
+.font {
+  font-size: 20px;
+}
+
 .kagaisha_table {
+  width: 75%;
   background-image: url(./img/haikei_orange.jpg);
   margin: 0 auto;
-
+  margin-bottom: 50px;
+  box-shadow: 8px 8px 4px gray;
 }
 
 
+/* 真輝の舞踊 */
 
+.buyou_body{
+  background-image:url(./buyou_img/buyou_back.jpg);
+}
 
+.buyou_title {
+  text-align: center;
+}
+
+.buyou_main {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 75%;
+  background-image: url(./buyou_img/buyou_back2.jpg);
+  box-shadow: 8px 8px 4px gray;
+}
+
+.buyou_img1 {
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.buyou_title {
+  margin: 30px auto;
+  margin-bottom: 50px;
+  width: 60%;
+  position: relative;
+  background: #ffdffc;
+  box-shadow: 0px 0px 0px 5px #ffdff4;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+
+.buyou_title:after {
+  position: absolute;
+  content: '';
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #fff #fff #ffb6e3;
+}
 
 
 
 /* 幼き日のCSS */
 
-/* テーブル内の背景をレインボーにする */
+.osanakihi_title {
+  margin: 10 auto;
+  text-align: center  ;
+  color: #505050;/*文字色*/
+  padding: 0.5em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.3;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+
+}
+
+.osanakihi_title:before {
+  content: '●';
+  color: white;
+  margin-right: 8px;
+}
+
+
+.osanakihi_body {
+  background-image: url(./img/osanakihi_back.gif);
+}
+
+.osanakihi_title {
+  text-align: center;
+}
+
+.osanakihi_main {
+  
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 75%;
+  background-image: url(./img/osanakihi_back2.jpg);
+  box-shadow: 8px 8px 4px gray;
+}
+
+.osanakihi_img1 {
+  justify-content: center;
+  display: flex;
+  width:100%;
+ object-fit: contain;
+}
+
+
 .osanakihi_table{
-  background: -moz-linear-gradient(left,
+  width: 85%;
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-right:  5%;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: url(./img/osanakihi_back3.jpg);
+  box-shadow: 8px 8px 4px gray;
+
+  /* テーブル内の背景をレインボーにする */
+  /* background: -moz-linear-gradient(left,
     rgba(255,0,0,0.2),
     rgba(255,69,0,0.2),
     rgba(255,255,0,0.2),
@@ -500,16 +641,29 @@ footer {
     color-stop(56%, rgba(0,0,255,0.2)),
     color-stop(70%, rgba(75,0,130,0.2)),
     to(rgba(238,130,238,0.2))
-  );
+  ); */
 }
 
 
 /* 女性文化賞 */
 
-.bunka_table {
+.bunka_main {
+  width: 75%;
   margin: 0 auto;
-  border-color: #3cb3e4;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(./img/bunka_back.jpg);
   border-width: 5px;
+  box-shadow: 8px 8px 4px gray;
+
+}
+
+.bunka_img1 {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+
 }
 
 .bunka_font {
@@ -531,7 +685,7 @@ footer {
   text-align: center;
 }
 
-.bunka_table a{
+.bunka_main a{
   color: black;
 }
 
