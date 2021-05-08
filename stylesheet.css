@@ -462,17 +462,27 @@ footer {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 50px;
-  background-image: url(./202105_newIMAGE/mov_back.jpg);
+  background-image: url(./202105_newIMAGE/mov_back2.jpg);
   box-shadow: 8px 8px 4px gray;
 }
 
-.main {
+.kagaisha_main1 {
   padding-top: 20px;
   padding-bottom: 30px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   width: 75%;
   background-image: url(./202105_newIMAGE/main_back2.jpg);
+  box-shadow: 8px 8px 4px gray;
+}
+
+.kagaisha_main2 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 75%;
+  background-image: url(./202105_newIMAGE/kagaisha_back.gif);
   box-shadow: 8px 8px 4px gray;
 }
 
@@ -647,7 +657,33 @@ footer {
 
 /* 女性文化賞 */
 
-.bunka_main {
+.bunka_main_title {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  background: #ceeffc;
+  box-shadow: 0px 0px 0px 5px #ceeffc ;
+  border: dashed 3px white;
+  padding: 0.2em 0.5em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.bunka_main1 {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(./bunkasho_img/bunka_img1_back.gif);
+  border-width: 5px;
+  box-shadow: 8px 8px 4px gray;
+
+}
+
+
+.bunka_main2 {
   width: 75%;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -683,9 +719,11 @@ footer {
 .bunka_subtitle {
   font-size: 20px;
   text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px 0 rgba(0,0,0,.2);
 }
 
-.bunka_main a{
+.bunka_main2 a{
   color: black;
 }
 
@@ -694,8 +732,9 @@ footer {
 }
 
 .heading {
-  margin: 10px 0
+  margin: 10px 0;
 }
+
 .bunka_title4 .heading {
   padding: 15px 5px;
   margin: 10px -20px;
@@ -705,6 +744,7 @@ footer {
   border-radius: 3px;
   background: #fff;
 }
+
 .bunka_title4 .heading:after,
 .bunka_title4 .heading:before {
   content: '';
@@ -723,6 +763,65 @@ footer {
 .bunka_title4 .heading:before {
     right: 2px;
     transform: rotate(60deg);
+}
+
+
+/* 思い出の写真 */
+.omoide_body {
+  background-image: url(./omoide_img/omoide_back.jpg);
+}
+
+.omoide_table {
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  table-layout: fixed;
+}
+
+.omoide_table p {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+.omoide_table td {
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+/* .omoide_table td img{
+  height: 400px;
+  width: 300px;
+} */
+
+.omoide_title {
+  text-align: center;
+}
+
+.omoide_font {
+  text-align: left;
+  padding-left: 30px;
+}
+
+
+
+.omoide_title {
+  width: 60%;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  background: #ffd2ff;
+  box-shadow: 0px 0px 0px 5px #ffd2ff ;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.omoide_title span {
+  font-size: 15px;
+  margin: -10px;
 }
 
 
