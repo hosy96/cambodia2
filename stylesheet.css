@@ -679,7 +679,6 @@ footer {
   background-image: url(./bunkasho_img/bunka_img1_back.gif);
   border-width: 5px;
   box-shadow: 8px 8px 4px gray;
-
 }
 
 
@@ -818,6 +817,34 @@ footer {
 .omoide_title span {
   font-size: 15px;
   margin: -10px;
+}
+
+/* 新聞記事ページ */
+
+.media_title {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.media_table {
+  width: 60%;
+  margin: 0 auto;
+  background-image: url(./img/media_table_back.jpg);
+  box-shadow: 8px 8px 4px gray;
+}
+
+.media_table2 {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 22px;
+  background-image: url(./img/media_table_back2.gif);
+  box-shadow: 8px 8px 4px gray;
+}
+
+.media_table a {
+  color: blue;
+  font-size: 15px;
 }
 
 
