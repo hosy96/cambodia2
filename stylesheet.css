@@ -845,6 +845,14 @@ body {
   margin-top: 80px;
 }
 
+.irononaisora_body a:hover{
+  color: skyblue;
+}
+
+.irononaisora_body table {
+  background-color: white;
+}
+
 /* 新聞記事ページ */
 .media_body{
   margin-top: 80px;
