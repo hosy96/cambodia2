@@ -1,88 +1,17 @@
 /*-------  ここから共通のCSS  --------*/
-/* body {
-  margin: 0;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  font-size: 14px;
-  color: #888;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  transition: all .3s;
-}
-
-a:hover {
-  color: #5983ff;
-  text-decoration: none;
-}
-
-h2, h3, h4, h5, h6 {
+.common_title{
   margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 400;
-}
-
-h4, h5 {
-  color: #444;
-  font-size: 18px;
-}
-
-h3:before, h3:after{
-  content: "";
-  background-color: #616161;
-  display: inline-block;
-  width: 120px;
-  height: 1px;
-  margin: 0 6rem;
-  vertical-align: middle;
-}
-
-.container {
-  width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.section-title {
-  color: #555;
-  padding-top: 60px;
-  padding-bottom: 10px;
   text-align: center;
+  font-size: 25px;
 }
 
-.section-title h3 {
-  margin: 10px 0;
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 36px;
-}
-
-.gray-section {
-  background: #f4f4f4;
-  color: #888;
-} */
 /*-------  ここまで共通のCSS  --------*/
-
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 
 /*-------  ここからheader  --------*/
@@ -96,12 +25,44 @@ header {
   line-height: 50px;
   box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
   z-index: 10;
-  }
+}
+
+/* 旅行ページのみヘッダー配置修正 */
+.trip_header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: -30px;
+  background-color: white;
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
 
 .header-title {
   float: left;
   padding-left: 50px;
+  display: flex;
 }
+
+.header-font {
+  font-size: 23px;
+  margin-top: 8px;
+  color: #507cff;
+  font-weight: bold;
+  font-family: fantasy;
+}
+
+.header-font_trip {
+  font-size: 23px;
+  margin-top: -10px;
+  color: #507cff;
+  font-weight: bold;
+  font-family: fantasy;
+}
+
 
 .header-title img {
   width: 300px;
@@ -132,6 +93,33 @@ header {
   color: #5983ff;
   transition: color .3s;
 }
+
+/* 旅行ページのみヘッダー配置修正 */
+.header-menu-right_trip {
+  float: right;
+  padding-right: 80px;
+  padding-top: 10px;
+  margin-top: -0.5px;
+  margin-bottom: -1px;
+}
+
+.header-menu-right_trip li {
+  float: left;
+}
+
+.header-menu-right_trip a {
+  color: blue;
+  font-weight: 700;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+.header-menu-right_trip a:hover {
+  color: #5983ff;
+  transition: color .3s;
+}
+
 /*-------  ここまでheader  --------*/
 
 
@@ -162,7 +150,7 @@ header {
 header {
   width: 100%;
   margin-bottom: 60px;
-  background: linear-gradient(to right, #ffffffcc, #85e1fd);
+  background: linear-gradient(to right, #ffffff, #85e1fd);
 }
 
 .top-container {
@@ -191,7 +179,6 @@ header {
   width: 100%;
 }
 
-
 .top-img img {
   display: block;
   box-sizing: border-box;
@@ -210,7 +197,6 @@ header {
   animation-iteration-count: 1; 
   animation-direction: normal; 
   animation-fill-mode: forwards; 
-  
 }
 
 .self-content {
@@ -218,7 +204,7 @@ header {
   margin-right: 20px;
   margin-bottom: 60px;
   width: 60%;
-  background: linear-gradient(to right, #f7adf7, #ffffff);
+  background: linear-gradient(to right, #ffc5ff, #ffffff);
   /* background-image: url(./img/top_jikoshoukai_back.jpg); */
   padding: 20px 40px;
   border-radius: 1%;
@@ -230,8 +216,7 @@ header {
   animation-delay: 0s; 
   animation-iteration-count: 1; 
   animation-direction: normal; 
-  animation-fill-mode: forwards; 
-
+  animation-fill-mode: forwards;
 }
 
 #profile {
@@ -243,7 +228,7 @@ header {
 .self-tag{
   padding-bottom: 20px;
   font-weight: bold;
-  color: yellow;
+  color: rgb(80, 80, 255);
 }
 
 .self-content p {
@@ -259,7 +244,6 @@ header {
 .two-table {
   width: 100%;
   height: 250px;
-
 }
 
 .two-table td {
@@ -269,7 +253,6 @@ header {
 .table-culm {
   width: 100%;
   height: 100px;
-
 }
 
 .top-book {
@@ -295,7 +278,6 @@ header {
   border-radius: 3%;
   width: 80%;
   box-shadow: 8px 8px 4px gray;
-  
 }
 
 .top-book p {
@@ -318,8 +300,6 @@ header {
   color: #5983ff;
   transition: color .3s;
 }
-
-
 
 .top-boad img {
   width: 70%;
@@ -352,7 +332,6 @@ header {
 
 
 /* メニューリスト */
-
 .menu-list {
   background: linear-gradient(to right, #f08c4acc, #f7ebb7);
   padding-top: 40px;
@@ -406,8 +385,6 @@ header {
   font-weight: bold;
 }
 
-
-
 a {
   color: whitesmoke; 
 }
@@ -423,20 +400,27 @@ footer {
   background: linear-gradient(to top, #ffffff, #b4b4b4);
 }
 
-
-/* 共通 Common */
-.common_title{
-  margin-top: 10px;
-  text-align: center;
-  font-size: 25px;
-}
-
 /* 加害者との対面 */
+.kagaisha_main_title {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  background: #a6d3c8;
+  box-shadow: 0px 0px 0px 5px #a6d3c8 ;
+  border: dashed 3px white;
+  padding: 0.9em 0.5em;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
 
 .kagaisha_title {
   margin: 30px auto;
   margin-bottom: 50px;
-  width: 60%;
+  width: 65%;
+  font-size: 32 px;
+  font-weight: bold;
   position: relative;
   padding: 0.5em;
   background: #a6d3c8;
@@ -488,6 +472,7 @@ footer {
 
 .kagaisha_body{
   background-image:url(./img/b087.gif);
+  margin-top: 90px;
 }
 
 .kagaisha_title {
@@ -500,13 +485,11 @@ footer {
 
 .kagaisha_mov {
   text-align: center;
-
 }
 
 .kagaisha_img1 {
   margin: 0 auto;
   text-align: center;
-
 }
 
 .font {
@@ -515,6 +498,9 @@ footer {
 
 .kagaisha_table {
   width: 75%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   background-image: url(./img/haikei_orange.jpg);
   margin: 0 auto;
   margin-bottom: 50px;
@@ -523,9 +509,9 @@ footer {
 
 
 /* 真輝の舞踊 */
-
 .buyou_body{
   background-image:url(./buyou_img/buyou_back.jpg);
+  margin-top: 90px;
 }
 
 .buyou_title {
@@ -536,7 +522,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 30px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   width: 75%;
   background-image: url(./buyou_img/buyou_back2.jpg);
   box-shadow: 8px 8px 4px gray;
@@ -545,7 +531,6 @@ footer {
 .buyou_img1 {
   margin: 0 auto;
   text-align: center;
-
 }
 
 .buyou_title {
@@ -571,11 +556,14 @@ footer {
 }
 
 
-
 /* 幼き日のCSS */
-
 .osanakihi_title {
+  font-size: 34px;
+  font-weight: bold;
   margin: 10 auto;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 30px;
   text-align: center  ;
   color: #505050;/*文字色*/
   padding: 0.5em;/*文字周りの余白*/
@@ -584,7 +572,6 @@ footer {
   background: #dbebf8;/*背景色*/
   vertical-align: middle;
   border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
-
 }
 
 .osanakihi_title:before {
@@ -592,7 +579,6 @@ footer {
   color: white;
   margin-right: 8px;
 }
-
 
 .osanakihi_body {
   background-image: url(./img/osanakihi_back.gif);
@@ -603,7 +589,6 @@ footer {
 }
 
 .osanakihi_main {
-  
   padding-top: 20px;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -620,18 +605,18 @@ footer {
  object-fit: contain;
 }
 
-
 .osanakihi_table{
   width: 85%;
-  padding-top: 30px;
-  padding-left: 5%;
-  padding-right:  5%;
-  padding-bottom: 50px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
   background-image: url(./img/osanakihi_back3.jpg);
   box-shadow: 8px 8px 4px gray;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right:  5%;
+  padding-bottom: 50px;
+
 
   /* テーブル内の背景をレインボーにする */
   /* background: -moz-linear-gradient(left,
@@ -656,6 +641,9 @@ footer {
 
 
 /* 女性文化賞 */
+body {
+  margin-top: 50px;
+}
 
 .bunka_main_title {
   width: 65%;
@@ -665,7 +653,7 @@ footer {
   background: #ceeffc;
   box-shadow: 0px 0px 0px 5px #ceeffc ;
   border: dashed 3px white;
-  padding: 0.2em 0.5em;
+  padding: 0.9em 0.2em;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -691,14 +679,12 @@ footer {
   background-image: url(./img/bunka_back.jpg);
   border-width: 5px;
   box-shadow: 8px 8px 4px gray;
-
 }
 
 .bunka_img1 {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
-
 }
 
 .bunka_font {
@@ -768,11 +754,12 @@ footer {
 /* 思い出の写真 */
 .omoide_body {
   background-image: url(./omoide_img/omoide_back.jpg);
+  margin-top: 90px;
 }
 
 .omoide_table {
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 100px;
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
@@ -820,7 +807,6 @@ footer {
 }
 
 /* 新聞記事ページ */
-
 .media_title {
   margin: 0 auto;
   margin-top: 20px;
@@ -847,6 +833,92 @@ footer {
   font-size: 15px;
 }
 
+/* 講演実績 */
+.kouen_jisseki {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* 色のない空 */
+.irononaisora_body {
+  margin-top: 80px;
+}
+
+/* 新聞記事ページ */
+.media_body{
+  margin-top: 80px;
+}
+
+.dance_body {
+  margin: 0 auto; 
+  margin-top: 80px;
+  
+}
+
+/* 問い合わせページ */
+.mail_body {
+  text-align: center;
+  margin-top: 100px;
+  color: black;
+  background-image: url(img/mail_back.jpg);
+}
+
+.mail_main_div {
+  font-size: 20px;
+}
+
+.mail_main {
+  width: 620px;
+  font-size: 20 px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  background: rgb(255, 199, 95);
+  box-shadow: 0px 0px 0px 5px rgb(255, 199, 95);
+  border: dashed 2px white;
+  padding: 0.8em 0.9em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.mail_body a {
+  color: blue;
+}
+
+.mail_body a:hover {
+  color: #507cff;
+}
+
+/* 家族旅行ページ */
+.trip_body {
+  margin-top: 90px;
+  margin-left: 20px;
+
+}
+.trip_table {
+  background-color: #FFFF99;
+  margin-bottom: 30px;
+}
+
+.trip_table img {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.trip_table  {
+  border: 1px solid blue;
+}
+
+.trip_table tr td {
+  border: 1px double blue;
+
+}
+
+/* 書籍ページ */
+.books_body {
+  margin-left: 20px;
+}
 
 /*-------  ここからハンバーガー  --------*/
 .wrapper {
@@ -859,7 +931,6 @@ footer {
   display: block;
   width: 0;
   height: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -961,12 +1032,4 @@ nav li {
   text-align: center;
   padding: 10px 0;
 }
-
-
-
-
-
-
-
-
 
