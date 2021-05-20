@@ -402,10 +402,10 @@ footer {
 
 /* 加害者との対面 */
 .kagaisha_main_title {
-  width: 65%;
+  width: 68%;
   text-align: center;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   background: #a6d3c8;
   box-shadow: 0px 0px 0px 5px #a6d3c8 ;
@@ -419,7 +419,7 @@ footer {
   margin: 30px auto;
   margin-bottom: 50px;
   width: 65%;
-  font-size: 32 px;
+  font-size: 32px;
   font-weight: bold;
   position: relative;
   padding: 0.5em;
@@ -616,6 +616,7 @@ footer {
   padding-left: 30px;
   padding-right:  5%;
   padding-bottom: 50px;
+  font-size: 15px;
 
 
   /* テーブル内の背景をレインボーにする */
@@ -647,6 +648,7 @@ body {
 
 .bunka_main_title {
   width: 65%;
+  font-size: 15px;
   text-align: center;
   margin: 0 auto;
   font-weight: bold;
@@ -843,6 +845,16 @@ body {
 /* 色のない空 */
 .irononaisora_body {
   margin-top: 80px;
+}
+
+/* 差別反対 */
+.sabetu_body {
+  margin-top: 80px;
+}
+
+.sabetu_font {
+  font-size: 18px;
+  padding-left: 20px;
 }
 
 .irononaisora_body a:hover{
